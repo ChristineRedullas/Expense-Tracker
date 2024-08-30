@@ -19,6 +19,31 @@ html {
 
 body {
   margin-bottom: 60px;
-  background-color : darkslategray;
-  color : white;
+  background-color : darkseagreen;
+  color : #fff;
 }
+
+.e-bigger {
+    font-size: x-large;
+}
+
+/*Radio button Group*/
+.e-btn-group .custom-rbt-group {
+    width: 100%;
+}
+
+.e-btn-group .custom-rbt-group .e-btn {
+    width: 50%;
+}
+
+.custom-rbt-group label.e-btn {
+    box-shadow: none !important;
+    background-color: lightcoral;
+    color: white;
+}
+
+.e-btn-group .custom-rbt-group input:checked + label.e-btn {
+    color: white;
+    background-color: lightcoral;
+}
+

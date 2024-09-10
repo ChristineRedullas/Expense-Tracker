@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Expense_Tracker</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="https://cdn.syncfusion.com/ej2/20.3.47/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/bootstrap5-dark.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Expense_Tracker.styles.css" asp-append-version="true" />
+    
+    @* This was a way to make it darkmode *@
+    @* <link href="https://cdn.syncfusion.com/ej2/20.3.47/material.css" rel="stylesheet" /> *@
+
 
 </head>
 <body class="e-bigger">
@@ -32,10 +36,14 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
     </div>
 
     <footer class="border-top footer text-muted">

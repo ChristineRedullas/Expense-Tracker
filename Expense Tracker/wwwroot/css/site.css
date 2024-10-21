@@ -13,9 +13,18 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    font-family: 'Inter', sans-serif;
 }
+
+
+
+*:not(.fa-solid):not(.fa):not(.e-icons) {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
 
 body {
   margin-bottom: 60px;
@@ -27,6 +36,17 @@ body {
     font-size: x-large;
 }
 
+/*Button*/
+.btn:focus, .btn:active{
+    outline: none !important;
+    box-shadow: none;
+}
+
+/*HyperLink*/
+.no-a-decoration, .no-a-decoration:hover{
+    text-decoration:none;
+    color:inherit;
+}
 /*Grid*/
 .e-grid {
     border: 0;

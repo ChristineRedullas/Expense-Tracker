@@ -13,7 +13,7 @@ namespace Expense_Tracker.Models
         public string Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]
-        public string Icon { get; set; } = string.Empty;
+        public string Icon { get; set; } = "";
 
         [Column(TypeName = "nvarchar(10)")]
         public string Type { get; set; } = "Expense";
@@ -26,6 +26,5 @@ namespace Expense_Tracker.Models
                 return this.Icon + " " + this.Title;
             }
         }
-
     }
 }
